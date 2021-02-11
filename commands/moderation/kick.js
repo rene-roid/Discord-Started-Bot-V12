@@ -31,6 +31,7 @@ module.exports = {
                 .setDescription(`❎ ${user.username}, who do you want to kick?`)
                 .setColor(`#ff3d3d`)
                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                .setTimestamp()
                 message.channel.send(no)
               return
             }
@@ -43,6 +44,7 @@ module.exports = {
                 .setDescription(`✅ ${user.username}, ${member.user.tag} has been kicked`)
                 .setColor(`#3cf05a`)
                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                .setTimestamp()
                 message.channel.send(YAS)
             } else {
               const NOOO = new MessageEmbed()
@@ -51,6 +53,7 @@ module.exports = {
               .setFooter('Please check if I have the "KICK_MEMBERS" permission')
               .setColor(`#ff3d3d`)
               .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+              .setTimestamp()
               message.channel.send(NOOO)
             }
 
