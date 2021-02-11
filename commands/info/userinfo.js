@@ -19,7 +19,7 @@ const flags = {
 
 module.exports = {
 
-    guildOnly: false,
+    guildOnly: true,
 
     name: 'userinfo',
     commands: ['userinfo'],
@@ -109,8 +109,9 @@ module.exports = {
                         value: `${roles.length < 10 ? roles.join(', ') : roles.length > 10 ? this.client.utils.trimArray(roles) : 'None'}`,
                         inline: true
                     }
-
                 )
+                .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                .setTimestamp()
 
             const sendEmbed = await message.channel.send(embed);
 
