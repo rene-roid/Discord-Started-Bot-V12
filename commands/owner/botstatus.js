@@ -21,6 +21,7 @@ module.exports = {
     callback: async ({ message, args, text, client, prefix, instance }) => {
         const { guild, member, channel, mentions } = message
         const user = message.member.user
+
         try {
 
             const content = args.join(" ")
@@ -31,6 +32,7 @@ module.exports = {
             .setDescription("❎ Please enter a status type!")
             .setColor(`#ff3d3d`)
             .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+            .setTimestamp()
             if (!splitt[0]) return message.channel.send(lol);
     
                 if(content === 'dnd') {
@@ -40,6 +42,7 @@ module.exports = {
                         .setDescription("✅ Status changed to `do not disturb`!")
                         .setColor(`#3cf05a`)
                         .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                        .setTimestamp()
                         message.channel.send(dndEmbed)
                 } else {
                     if(content === 'online') {
@@ -49,6 +52,7 @@ module.exports = {
                         .setDescription("✅ Status changed to `online`!")
                         .setColor(`#3cf05a`)
                         .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                        .setTimestamp()
                         message.channel.send(onlineEmbed)
                     } else {
                         if(content === 'idle') {
@@ -58,6 +62,7 @@ module.exports = {
                         .setDescription("✅ Status changed to `idle`!")
                         .setColor(`#3cf05a`)
                         .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                        .setTimestamp()
                         message.channel.send(idleEmbed)
                         } else {
                             if(content != ['dnd', 'online', 'idle']) {
@@ -70,6 +75,7 @@ module.exports = {
                                 idle`)
                                 .setColor(`#ff3d3d`)
                                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                                .setTimestamp()
                                 return message.channel.send(errorEmbed)
                             } 
                         
