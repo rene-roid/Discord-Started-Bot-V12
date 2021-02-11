@@ -36,6 +36,7 @@ module.exports = {
           .setColor('#fff94f')
           .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
           .setThumbnail(client.user.displayAvatarURL())
+          .setTimestamp()
   
         let com = {};
         for (let comm of commands) {
