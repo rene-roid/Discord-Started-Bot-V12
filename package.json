@@ -1,0 +1,26 @@
+{
+  "name": "Discord-Starter-Bot",
+  "version": "1.0.0",
+  "description": "Open Source Discord.js V12 Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rene-roid/Discord-Starter-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rene-roid/Discord-Starter-Bot/issues"
+  },
+  "homepage": "https://github.com/rene-roid/Discord-Starter-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7",
+    "wokcommands": "^1.2.1"
+  }
+}
