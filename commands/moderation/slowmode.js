@@ -33,6 +33,7 @@ module.exports = {
               .setDescription(`❎ ${user.username}, please give me a number`)
               .setColor(`#ff3d3d`)
               .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+              .setTimestamp()
                 message.channel.send(NONOMBER)
               return
             }
@@ -46,6 +47,7 @@ module.exports = {
                 .setDescription(`✅ ${user.username}, slowmode has been removed`)
                 .setColor(`#3cf05a`)
                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                .setTimestamp()
                 message.channel.send(DISS)
             } if (time > 21600) {
                 const TOBIG = new MessageEmbed()
@@ -53,6 +55,7 @@ module.exports = {
                 .setDescription(`❎ ${user.username}, please give me a number between 0 and 21600`)
                 .setColor(`#ff3d3d`)
                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                .setTimestamp()
                   message.channel.send(TOBIG)
             } if (time >= 1) {
                 const awaits = await message.channel.setRateLimitPerUser(args[0])
@@ -61,6 +64,7 @@ module.exports = {
                   .setDescription(`✅ ${user.username}, slowmode has been set to ${time}`)
                   .setColor(`#3cf05a`)
                   .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                  .setTimestamp()
                   message.channel.send(ACT)
               }
 
