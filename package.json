@@ -1,7 +1,7 @@
 {
   "name": "Discord-Starter-Bot",
   "version": "1.0.0",
-  "description": "Open Source Discord.js V12 Bot",
+  "description": "Open Source Code Discord.js V12 Bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
