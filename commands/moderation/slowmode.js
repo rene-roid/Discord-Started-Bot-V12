@@ -61,7 +61,7 @@ module.exports = {
                 const awaits = await message.channel.setRateLimitPerUser(args[0])
                 const ACT = new MessageEmbed()
                   .setAuthor(`${client.user.username}`, `${client.user.displayAvatarURL({ dynamic: true})}`)
-                  .setDescription(`✅ ${user.username}, slowmode has been set to ${time}`)
+                  .setDescription(`✅ ${user.username}, slowmode has been set to ${time} secconds`)
                   .setColor(`#3cf05a`)
                   .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
                   .setTimestamp()
