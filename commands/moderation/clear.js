@@ -31,6 +31,7 @@ module.exports = {
                 .setAuthor(`${client.user.username}`, `${client.user.displayAvatarURL({ dynamic: true})}`)
                 .setDescription(`❎ ${user.username}, please give me a number`)
                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
+                .setTimestamp()
                 .setColor(`#ff3d3d`)
                 message.channel.send(naw)
             } else {
@@ -40,6 +41,7 @@ module.exports = {
                     .setDescription(`❎ ${user.username}, please give me a number`)
                     .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
                     .setColor(`#ff3d3d`)
+                    .setTimestamp()
                     message.channel.send(notanumber)
             } else {
                 if(number > 100) {
@@ -48,6 +50,7 @@ module.exports = {
                     .setDescription(`❎ ${user.username}, please give me a number between 1-100`)
                     .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
                     .setColor(`#ff3d3d`)
+                    .setTimestamp()
                     message.channel.send(loldont)
                 } else {
                     if(number < 1) {
@@ -56,6 +59,7 @@ module.exports = {
                     .setDescription(`❎ ${user.username}, please give me a number between 1-100`)
                     .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
                     .setColor(`#ff3d3d`)
+                    .setTimestamp()
                     message.channel.send(megobruhnow)
                     } else {
                     const awaits = await message.channel.bulkDelete(number)
@@ -65,6 +69,7 @@ module.exports = {
                     .setDescription(`✅ ${user.username}, I have deleted ${awaits.size} messages`)
                     .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
                     .setColor(`#3cf05a`)
+                    .setTimestamp()
                     message.channel.send(done).then(sent => sent.delete({ timeout: 5000 }))
                     }
                 }
