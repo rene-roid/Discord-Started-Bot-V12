@@ -20,7 +20,7 @@ module.exports = {
     maxArgs: 0,
     
     callback: async ({ message, args, text, client, prefix, instance }) => {
-        const { guild, member, channel, mentions } = message
+        const { member, channel, mentions } = message
         const user = message.member.user
 
         try {
