@@ -49,7 +49,7 @@ client.on('ready', () => {
         },
       ])
       .setDefaultPrefix('!')
-      .setColor('#fff94f') //RANDOM HELP COLOR COMMAND
+      .setColor('#fff94f')
 
 })
 
