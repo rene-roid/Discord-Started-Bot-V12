@@ -17,7 +17,7 @@ client.on('ready', () => {
     testServers: [''],
   })
       .setMongoPath(process.env.MONGO_URI)
-      .setBotOwner([''])
+      .setBotOwner(['450330964481146880'])
       .setCategorySettings([
         {
           // You can change the default emojis as well
