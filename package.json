@@ -1,6 +1,6 @@
 {
   "name": "Discord-Starter-Bot",
-  "version": "1.0.0",
+  "version": "1.48.4",
   "description": "Open Source Code Discord.js V12 Bot",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,9 @@
     "moment": "^2.29.1",
     "mongoose": "^5.11.15",
     "ms": "^2.1.3",
+    "nekos.life": "^2.0.7",
     "nodemon": "^2.0.7",
+    "something-random-on-discord": "0.0.2",
     "wokcommands": "^1.2.1"
   }
 }
