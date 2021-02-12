@@ -20,12 +20,32 @@ client.on('ready', () => {
       .setBotOwner(['450330964481146880'])
       .setCategorySettings([
         {
+          name: 'Owner',
+          emoji: '💻',
+          hidden: true
+        },
+        {
           // You can change the default emojis as well
           name: 'Configuration',
           emoji: '🚧',
           // You can also hide a category from the help menu
           // Admins bypass this
           hidden: true
+        },
+        {
+          name: 'Moderation',
+          emoji: '🔧',
+          hidden: false
+        },
+        {
+          name: 'Info',
+          emoji: '📰',
+          hidden: false
+        },
+        {
+          name: 'Fun',
+          emoji: '⚽',
+          hidden: false
         },
       ])
       .setDefaultPrefix('!')
