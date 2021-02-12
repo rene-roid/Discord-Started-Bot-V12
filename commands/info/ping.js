@@ -12,7 +12,7 @@ module.exports = {
 
     // requiredPermissions: [''],
     cooldown: '5s',
-    category: 'Owner',
+    category: 'Info',
 
     expectedArgs: "",
 
