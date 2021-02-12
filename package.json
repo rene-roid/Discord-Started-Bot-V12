@@ -1,6 +1,6 @@
 {
   "name": "Discord-Starter-Bot",
-  "version": "1.48.4",
+  "version": "1.49.4",
   "description": "Open Source Code Discord.js V12 Bot",
   "main": "index.js",
   "scripts": {
