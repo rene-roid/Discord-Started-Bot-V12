@@ -29,10 +29,10 @@ module.exports = {
 
             const randompp = '='.repeat(Math.floor(Math.random() * 20))
     
-            const ppembed = new Discord.MessageEmbed()
+            const ppembed = new MessageEmbed()
                 .setTitle(`${user.username}'s pp size`)
                 .setDescription(`8${randompp}D`)
-                .setColor(`#ff3d3d`)
+                .setColor(`RANDOM`)
                 .setFooter(`Requested by: ${message.author.username}`, user.displayAvatarURL())
                 .setTimestamp()
             message.channel.send(ppembed)

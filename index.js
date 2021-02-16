@@ -47,6 +47,11 @@ client.on('ready', () => {
           emoji: '⚽',
           hidden: false
         },
+        {
+          name: 'Music',
+          emoji: '🎵',
+          hidden: false
+        },
       ])
       .setDefaultPrefix('!')
       .setColor('#fff94f')
