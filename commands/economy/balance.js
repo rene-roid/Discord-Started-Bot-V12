@@ -11,9 +11,8 @@ module.exports = {
     aliases: [''],
     description: "Shows a users balance.",
 
-    // requiredPermissions: ['BAN_MEMBERS'],
     cooldown: "5s",
-    category: "Moderation",
+    category: "Economy",
 
     expectedArgs: "<Target user's @>",
 
