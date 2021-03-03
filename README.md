@@ -1,2 +1,2 @@
 # ecobo
- Economy discord bot
+ Discord economy bot

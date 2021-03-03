@@ -1,22 +1,8 @@
 {
-  "name": "Discord-Starter-Bot",
-  "version": "1.49.4",
-  "description": "Open Source Code Discord.js V12 Bot",
+  "name": "ecobo",
+  "version": "1.0.0",
+  "description": "Economy discord bot",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rene-roid/Discord-Starter-Bot.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rene-roid/Discord-Starter-Bot/issues"
-  },
-  "homepage": "https://github.com/rene-roid/Discord-Starter-Bot#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "discord.js": "^12.5.1",
@@ -30,5 +16,20 @@
     "quickmongo": "^3.0.2",
     "something-random-on-discord": "0.0.2",
     "wokcommands": "^1.2.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rene-roid/Discord-Starter-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rene-roid/Discord-Starter-Bot/issues"
+  },
+  "homepage": "https://github.com/rene-roid/Discord-Starter-Bot#readme"
 }
