@@ -1,5 +1,6 @@
 const DiscordJS = require('discord.js')
 const WOKCommands = require('wokcommands')
+const { Database } = require('quickmongo')
 require('dotenv').config()
 
 const client = new DiscordJS.Client({
@@ -38,24 +39,19 @@ client.on('ready', () => {
           hidden: false
         },
         {
-          name: 'Info',
+          name: 'Economy',
           emoji: '📰',
-          hidden: false
-        },
-        {
-          name: 'Fun',
-          emoji: '⚽',
-          hidden: false
-        },
-        {
-          name: 'Music',
-          emoji: '🎵',
           hidden: false
         },
       ])
       .setDefaultPrefix('!')
       .setColor('#fff94f')
-
 })
+
+const db = new Database(process.env.MONGO_URI);
+
+db.on("ready", () => {
+    console.log("Database connected!");
+});
 
 client.login(process.env.TOKEN)
