@@ -11,13 +11,13 @@ module.exports = {
     aliases: ['rembal'],
     description: "Remove balance to a specific user",
 
-    // requiredPermissions: ['BAN_MEMBERS'],
+    requiredPermissions: ['ADMINISTRATOR'],
     cooldown: "5s",
-    category: "Moderation",
+    category: "Economy",
 
     expectedArgs: "<Target user's @>",
 
-    minArgs: 0,
+    minArgs: 1,
     maxArgs: 2,
 
     callback: async ({ message, args, text, client, prefix, instance }) => {
