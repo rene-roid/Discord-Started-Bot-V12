@@ -12,6 +12,14 @@ Type `npm i` to download all the bot's packages.
 
 ### Configuration
 
+Create a `.evn` file and add your bot token and your mongodb path following this format.
+```
+TOKEN=YourBotToken
+MONGO_URI=YourMongoPath
+```
+
+## Usage
+
 ### How to add commands
 
 As I said before, this code is using the [wokcommands](https://www.npmjs.com/package/wokcommands) package so to create a command, go to the "commands" folder and inside there you can create all you commands with the following structure:
