@@ -1,23 +1,8 @@
 {
-  "name": "ecobo",
-  "version": "1.0.0",
-  "description": "Economy discord bot",
+  "name": "Discord-Starter-Bot",
+  "version": "1.49.4",
+  "description": "Open Source Code Discord.js V12 Bot",
   "main": "index.js",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0",
-    "hmfull": "^1.2.3",
-    "moment": "^2.29.1",
-    "mongoose": "^5.11.15",
-    "ms": "^2.1.3",
-    "nekos.life": "^2.0.7",
-    "nodemon": "^2.0.7",
-    "quickmongo": "^3.0.2",
-    "something-random-on-discord": "0.0.2",
-    "wokcommands": "^1.2.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/rene-roid/Discord-Starter-Bot/issues"
   },
-  "homepage": "https://github.com/rene-roid/Discord-Starter-Bot#readme"
+  "homepage": "https://github.com/rene-roid/Discord-Starter-Bot#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "hmfull": "^1.2.3",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.15",
+    "ms": "^2.1.3",
+    "nekos.life": "^2.0.7",
+    "nodemon": "^2.0.7",
+    "something-random-on-discord": "0.0.2",
+    "wokcommands": "^1.2.1"
+  }
 }
