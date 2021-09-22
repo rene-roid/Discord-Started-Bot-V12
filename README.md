@@ -1,3 +1,4 @@
+# OUTDATED THIS IS USING DISCORD.JS V12
 # Discord-Starter-Bot
  
 # Discord.js-Starter-Bot
